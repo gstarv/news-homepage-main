@@ -562,14 +562,6 @@ video {
   position: relative;
 }
 
-.left-\[22rem\] {
-  left: 22rem;
-}
-
-.mt-\[20px\] {
-  margin-top: 20px;
-}
-
 .block {
   display: block;
 }
@@ -789,14 +781,6 @@ video {
 @media (min-width: 1024px) {
   .lg\:relative {
     position: relative;
-  }
-
-  .lg\:left-0 {
-    left: 0px;
-  }
-
-  .lg\:mt-0 {
-    margin-top: 0px;
   }
 
   .lg\:block {
