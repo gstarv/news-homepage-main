@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="output.css">
+  
+  <title>Frontend Mentor | News homepage</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+
+  /* body{
+    Soft-orange: hsl(35, 77%, 62%);
+    Soft-red: hsl(5, 85%, 63%);
+  } */
+
+
+
+html{
+  /* Off-white: hsl(36, 100%, 99%);
+Grayish-blue:hsl(233, 8%, 79%) ;
+Dark-grayish-blue: hsl(236, 13%, 42%);
+Very-dark-blue: hsl(240, 100%, 5%); */
+}
+
+    *{
+      outline: 1px solid red;
+    }
+
+    main{
+      /* outline: 1px solid blue; */
+    }
+
+    /* .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); } */
+  </style>
+</head>
+<body class="flex min-w-[50vw] min-h-[100vh] justify-center  transition-all duration-[0.5s] ease-in-out">
+
+  <main class="w-64 flex flex-col gap-8 lg:min-w-[90%]">
+    <header class="flex flex-row justify-between ">
+      <img class="min-w-10 h-7" src="/assets/images/logo.svg" alt="">
+
+      <nav class="block flex-col hidden lg:flex lg:flex-row lg:gap-8 font-semibold opacity-80 ">
+        <a class="hover:text-yellow-600 transition-all duration-[0.5s] ease-in-out" href="#">Home</a>
+        <a class="hover:text-yellow-600 transition-all duration-[0.5s] ease-in-out" href="#">New</a>
+        <a class="hover:text-yellow-600 transition-all duration-[0.5s] ease-in-out" href="#">Popular</a>
+        <a class="hover:text-yellow-600 transition-all duration-[0.5s] ease-in-out" href="#">Trending</a>
+        <a class="hover:text-yellow-600 transition-all duration-[0.5s] ease-in-out" href="#">Categories</a>
+      </nav>
+
+      <div class="w-8 h-8 relative hover:focus-within: lg:hidden">
+        <img class="absolute w-[100%] h-[100%]" src="/assets/images/icon-menu.svg" alt="">
+        <img class="absolute hidden" src="/assets/images/icon-menu-close.svg" alt="">
+      </div>
+  </header>
+
+
+
+<div class="flex flex-col gap-8 lg:flex lg:flex-row  ">
+    <div class="flex flex-col gap-6">
+          <div class="">
+            <img class="md:hidden lg:hidden" src="/assets/images/image-web-3-mobile.jpg" alt="">
+            <img class=" lg:block  md:visible hidden" src="/assets/images/image-web-3-desktop.jpg"  alt="">
+          </div>
+          <div class="flex flex-row gap-24">
+              <h1 class="font-bold text-6xl">The Bright Future of Web 3.0?</h1>
+              <div class="flex flex-col justify-between">
+                  <p class="text-xl w-[27rem] text-gray-400">
+                    We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+                    But is it really fulfilling its promise?
+                  </p>
+                
+                  <button class="bg-red-400 text-white w-28 text-nowrap p-1 lg:p-2 lg:w-48 hover:bg-black transition-all duration-[0.5s] ease-in-out">
+                    Read more
+                  </button>
+              </div>
+          </div>
+    </div>
+
+    
+
+    <div class="flex flex-col justify-between bg-black text-white gap-8 p-4">
+      <h1 class="text-yellow-600 font-bold text-2xl">New</h1>
+
+      <div>
+            <h4 class="font-semibold hover:text-yellow-500 transition-all duration-[0.5s] ease-in-out">Hydrogen VS Electric Cars</h4>
+            <p class="text-gray-400">
+              Will hydrogen-fueled cars ever catch up to EVs?
+            </p>
+      </div>
+    
+      <hr>
+    
+      <div>
+          <h4 class="font-semibold hover:text-yellow-500 transition-all duration-[0.5s] ease-in-out">The Downsides of AI Artistry</h4>
+          <p class="text-gray-400">
+            What are the possible adverse effects of on-demand AI image generation?
+          </p>
+      </div>
+    
+      <hr>
+    
+      <div>
+        <h4 class="font-semibold hover:text-yellow-500 transition-all duration-[0.5s] ease-in-out">Is VC Funding Drying Up?</h4>
+        <p class="text-gray-400">
+            Private funding by VC firms is down 50% YOY. We take a look at what that means.
+        </p>
+      </div>
+
+    </div>
+</div>
+
+<div class="flex flex-col gap-6 lg:flex lg:flex-row lg:justify-between">
+  <div class="flex flex-row gap-6 lg:w-[22rem]">
+    <img src="/assets/images/image-retro-pcs.jpg" width="72" alt="">
+    <div class="flex flex-col text-[15px]">
+      <h5 class="text-gray-300 font-bold text-xl">01</h5>
+      <p><b class="hover:text-red-400 transition-all duration-[0.5s] ease-in-out">Reviving Retro PCs</b></p>
+      <p>What happens when old PCs are given modern upgrades?</p>
+    </div>
+  </div>
+  
+  
+  <div class="flex flex-row gap-6 lg:w-[22rem]">
+    <img src="/assets/images/image-top-laptops.jpg" width="72" alt="">
+    <div class="flex flex-col justify-between text-[15px]">
+      <h5 class="font-bold text-xl text-gray-300">02</h5>
+      <p><b class="hover:text-red-400 transition-all duration-[0.5s] ease-in-out">Top 10 Laptops of 2022</b></p>
+      <p> our best picks for various needs and budgets</p>
+    </div>
+  </div>
+  
+  <div class="flex flex-row gap-6 lg:w-[22rem]">
+    <img src="/assets/images/image-gaming-growth.jpg" width="72" alt="">
+    <div class="flex flex-col justify-between text-[15px]">
+      <h5 class="font-bold text-xl text-gray-300">03</h5>
+      <p><b class="hover:text-red-400 transition-all duration-[0.5s] ease-in-out">The Growth of Gaming</b></p>
+      <p>  How the pandemic has sparked fresh opportunities.</p>
+    </div>
+  </div>
+</div>
+
+  </main>
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+</html>
